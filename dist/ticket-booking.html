@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticket Booking</title>
+    <title>Book Ticket | Process...</title>
     <link rel="shortcut icon" href="./assets/s-logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="ticket-booking.css">
 </head>
+
 <body>
-    <h1>Ticket Booking</h1>
+    <div class="container">
+        <form action="./success-msg.html">
+            <h3>Book Ticket</h3>
+            <hr>
+            <div class="input">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <label for="number-of-tickets">No.of tickets</label>
+                <input type="number" name="number-of-tickets" required>
+                <div class="from-to">
+                    <div class="from-location">
+                        <label for="from-location">from</label>
+                        <input type="text" name="from-location" id="from-location" required>
+                    </div>
+                    <img src="./assets/from-to.svg" alt="">
+                    <div class="to-location">
+                        <label for="to-location">to</label>
+                        <input type="to-location" id="to-location" required>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button>Book</button>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
